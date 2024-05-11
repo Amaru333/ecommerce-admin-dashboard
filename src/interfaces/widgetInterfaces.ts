@@ -8,12 +8,14 @@ export interface FormInputProps extends React.DetailedHTMLProps<React.InputHTMLA
   label: string;
   icon?: React.ReactNode;
   id: string;
+  theme?: "light" | "dark";
 }
 
 export interface FormTextAreaProps extends React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement> {
   label: string;
   icon?: React.ReactNode;
   id: string;
+  theme?: "light" | "dark";
 }
 
 export interface UIButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, React.AriaAttributes {
