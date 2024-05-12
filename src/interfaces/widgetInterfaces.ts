@@ -22,7 +22,7 @@ export interface UIButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLA
   children: React.ReactNode;
   className?: string;
   loading?: boolean;
-  theme?: "primary" | "secondary";
+  theme?: "light" | "dark";
 }
 
 export interface SidebarCategoryProps {
@@ -30,4 +30,19 @@ export interface SidebarCategoryProps {
   slug: string;
   description: string;
   image: null | File;
+}
+
+export interface UISingleImageUploaderProps {
+  label: string;
+  image: null | File;
+  setImage: (image: File | null) => void;
+  discardImage: () => void;
+}
+
+export interface UIColorPickerProps {
+  theme?: "light" | "dark";
+  id: string;
+  label: string;
+  value: string;
+  onChange: (e: string) => void;
 }

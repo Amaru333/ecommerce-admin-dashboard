@@ -9,7 +9,7 @@ const FormInput = ({ icon, label, id, theme = "light", className, ...rest }: For
       </label>
       <div className={`flex flex-row items-center border border-slate-400  ${theme === "light" ? "focus-within:border-slate-800" : "focus-within:border-white"} transition-all rounded px-2 py-1 gap-x-2`}>
         {icon && icon}
-        <input id={id} className={`focus:outline-none ${theme === "light" ? "text-black bg-white" : "bg-black text-white"} flex-1 ${className}`} {...rest} />
+        <input id={id} className={`focus:outline-none w-full ${theme === "light" ? "text-black bg-white" : "bg-black text-white"} flex-1 ${className && className}`} {...rest} />
       </div>
     </div>
   );

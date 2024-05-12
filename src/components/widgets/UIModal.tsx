@@ -4,7 +4,7 @@ import { UIModalProps } from "@/interfaces/widgetInterfaces";
 export function UIModal({ isOpen, onClose, children }: UIModalProps) {
   return (
     <Dialog onOpenChange={onClose} open={isOpen} modal>
-      <DialogContent className="sm:max-w-[425px] text-black">{children}</DialogContent>
+      <DialogContent className="sm:max-w-[525px] text-black">{children}</DialogContent>
     </Dialog>
   );
 }

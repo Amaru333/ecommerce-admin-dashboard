@@ -31,7 +31,7 @@ const LoginForm = () => {
       <FormInput className="min-w-80" icon={<MdEmail />} label="email" id="email" type="email" placeholder="abc@xyz.com" value={loginData.email} onChange={(e) => setLoginData({ ...loginData, email: e.target.value })} />
       <FormInput className="min-w-80" icon={<RiLockPasswordFill />} label="password" id="password" type="password" placeholder="••••••••" value={loginData.password} onChange={(e) => setLoginData({ ...loginData, password: e.target.value })} />
       <div className="mt-8 flex justify-center">
-        <UIButton onClick={onSubmit} className="px-16" loading={false} theme="secondary">
+        <UIButton onClick={onSubmit} className="px-16" loading={false} theme="dark">
           login
         </UIButton>
       </div>
